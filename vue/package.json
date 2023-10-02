@@ -1,7 +1,7 @@
 {
   "name": "@scienceicons/vue",
   "license": "MIT",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Open science icons for Vue, by Curvenote.",
   "keywords": [
     "icons",
@@ -16,6 +16,77 @@
     "20",
     "24"
   ],
+  "exports": {
+    "./20/solid": {
+      "types": "./20/solid/index.d.ts",
+      "import": "./20/solid/esm/index.js",
+      "require": "./20/solid/index.js"
+    },
+    "./20/solid/*": {
+      "types": "./20/solid/*.d.ts",
+      "import": "./20/solid/esm/*.js",
+      "require": "./20/solid/*.js"
+    },
+    "./20/solid/*.js": {
+      "types": "./20/solid/*.d.ts",
+      "import": "./20/solid/esm/*.js",
+      "require": "./20/solid/*.js"
+    },
+    "./20/solid/esm/*": {
+      "types": "./20/solid/*.d.ts",
+      "import": "./20/solid/esm/*.js"
+    },
+    "./20/solid/esm/*.js": {
+      "types": "./20/solid/*.d.ts",
+      "import": "./20/solid/esm/*.js"
+    },
+    "./24/outline": {
+      "types": "./24/outline/index.d.ts",
+      "import": "./24/outline/esm/index.js",
+      "require": "./24/outline/index.js"
+    },
+    "./24/outline/*": {
+      "types": "./24/outline/*.d.ts",
+      "import": "./24/outline/esm/*.js",
+      "require": "./24/outline/*.js"
+    },
+    "./24/outline/*.js": {
+      "types": "./24/outline/*.d.ts",
+      "import": "./24/outline/esm/*.js",
+      "require": "./24/outline/*.js"
+    },
+    "./24/outline/esm/*": {
+      "types": "./24/outline/*.d.ts",
+      "import": "./24/outline/esm/*.js"
+    },
+    "./24/outline/esm/*.js": {
+      "types": "./24/outline/*.d.ts",
+      "import": "./24/outline/esm/*.js"
+    },
+    "./24/solid": {
+      "types": "./24/solid/index.d.ts",
+      "import": "./24/solid/esm/index.js",
+      "require": "./24/solid/index.js"
+    },
+    "./24/solid/*": {
+      "types": "./24/solid/*.d.ts",
+      "import": "./24/solid/esm/*.js",
+      "require": "./24/solid/*.js"
+    },
+    "./24/solid/*.js": {
+      "types": "./24/solid/*.d.ts",
+      "import": "./24/solid/esm/*.js",
+      "require": "./24/solid/*.js"
+    },
+    "./24/solid/esm/*": {
+      "types": "./24/solid/*.d.ts",
+      "import": "./24/solid/esm/*.js"
+    },
+    "./24/solid/esm/*.js": {
+      "types": "./24/solid/*.d.ts",
+      "import": "./24/solid/esm/*.js"
+    }
+  },
   "publishConfig": {
     "access": "public"
   },
