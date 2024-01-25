@@ -12,6 +12,8 @@ Using `scienceicons` can be completed by
 This article is Open Access #OpenAccessIcon(color: orange, height: 1.1em, baseline: 20%)
 ```
 
+![](https://github.com/curvenote/scienceicons/blob/main/typst/docs/example.png?raw=true)
+
 ## Arguments
 
 The arguments for each icon are:
