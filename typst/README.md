@@ -4,10 +4,8 @@ SVG icons for open-science articles
 
 ## Usage
 
-Using `scienceicons` can be completed by
-
 ```typst
-#import "@preview/scienceicons": open-access-icon
+#import "@preview/scienceicons:0.0.6": open-access-icon
 
 This article is Open Access #open-access-icon(color: orange, height: 1.1em, baseline: 20%)
 ```
