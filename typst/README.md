@@ -56,7 +56,7 @@ You can browse and see all icons here:
 
 https://github.com/curvenote/scienceicons/tree/main/typst/docs/scienceicons.pdf
 
-![](https://github.com/curvenote/scienceicons/tree/main/typst/docs/icons.png)
+![](https://github.com/curvenote/scienceicons/blob/main/typst/docs/icons.png?raw=true)
 
 ## Contributing
 
