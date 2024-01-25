@@ -7,9 +7,9 @@ SVG icons for open-science articles
 Using `scienceicons` can be completed by
 
 ```typst
-#import "@preview/scienceicons": OpenAccessIcon
+#import "@preview/scienceicons": open-access-icon
 
-This article is Open Access #OpenAccessIcon(color: orange, height: 1.1em, baseline: 20%)
+This article is Open Access #open-access-icon(color: orange, height: 1.1em, baseline: 20%)
 ```
 
 ![](https://github.com/curvenote/scienceicons/blob/main/typst/docs/example.png?raw=true)
@@ -26,31 +26,31 @@ Additionally the raw SVG text for each icon can be found by replacing `Icon` wit
 
 ## List of Icons
 
-- ArxivIcon
-- CcByIcon
-- CcNcIcon
-- CcNdIcon
-- CcSaIcon
-- CcZeroIcon
-- CcIcon
-- CurvenoteIcon
-- DiscordIcon
-- EmailIcon
-- GithubIcon
-- JupyterBookIcon
-- JupyterTextIcon
-- JupyterIcon
-- LinkedinIcon
-- MastodonIcon
-- MystIcon
-- OpenAccessIcon
-- OrcidIcon
-- OsiIcon
-- RorIcon
-- SlackIcon
-- TwitterIcon
-- WebsiteIcon
-- YoutubeIcon
+- arxiv-icon
+- cc-by-icon
+- cc-nc-icon
+- cc-nd-icon
+- cc-sa-icon
+- cc-zero-icon
+- cc-icon
+- curvenote-icon
+- discord-icon
+- email-icon
+- github-icon
+- jupyter-book-icon
+- jupyter-text-icon
+- jupyter-icon
+- linkedin-icon
+- mastodon-icon
+- myst-icon
+- open-access-icon
+- orcid-icon
+- osi-icon
+- ror-icon
+- slack-icon
+- twitter-icon
+- website-icon
+- youtube-icon
 
 ## See All Icons
 

@@ -4,7 +4,7 @@
 
 = Science Icons
 
-Icons for open-source science publishing, made with love by #link("https://curvenote.com")[#CurvenoteIcon(color: blue.darken(20%)) Curvenote].
+Icons for open-source science publishing, made with love by #link("https://curvenote.com")[#curvenote-icon(color: blue.darken(20%)) Curvenote].
 
 == Usage
 
@@ -12,13 +12,13 @@ Using `scienceicons` can be completed by
 
 #box(width: 100%, radius: 3pt, inset: 10pt, fill: luma(95%))[
 ```typst
-#import "@preview/scienceicons": OpenAccessIcon
+#import "@preview/scienceicons": open-access-icon
 
-This article is Open Access #OpenAccessIcon(color: orange, height: 1.1em, baseline: 20%)
+This article is Open Access #open-access-icon(color: orange, height: 1.1em, baseline: 20%)
 ```
 ]
 #box(width: 100%, inset: 10pt, stroke: (left: luma(30%)))[
-This article is Open Access #OpenAccessIcon(color: orange, height: 1.1em, baseline: 20%)
+This article is Open Access #open-access-icon(color: orange, height: 1.1em, baseline: 20%)
 ]
 
 
@@ -40,31 +40,31 @@ Additionally the raw SVG text for each icon can be found by replacing `Icon` wit
   stroke: none,
   column-gutter: 3em,
 // Start Icons
-[`ArxivIcon`()], ArxivIcon(),
-[`CcByIcon`()], CcByIcon(),
-[`CcNcIcon`()], CcNcIcon(),
-[`CcNdIcon`()], CcNdIcon(),
-[`CcSaIcon`()], CcSaIcon(),
-[`CcZeroIcon`()], CcZeroIcon(),
-[`CcIcon`()], CcIcon(),
-[`CurvenoteIcon`()], CurvenoteIcon(),
-[`DiscordIcon`()], DiscordIcon(),
-[`EmailIcon`()], EmailIcon(),
-[`GithubIcon`()], GithubIcon(),
-[`JupyterBookIcon`()], JupyterBookIcon(),
-[`JupyterTextIcon`()], JupyterTextIcon(),
-[`JupyterIcon`()], JupyterIcon(),
-[`LinkedinIcon`()], LinkedinIcon(),
-[`MastodonIcon`()], MastodonIcon(),
-[`MystIcon`()], MystIcon(),
-[`OpenAccessIcon`()], OpenAccessIcon(),
-[`OrcidIcon`()], OrcidIcon(),
-[`OsiIcon`()], OsiIcon(),
-[`RorIcon`()], RorIcon(),
-[`SlackIcon`()], SlackIcon(),
-[`TwitterIcon`()], TwitterIcon(),
-[`WebsiteIcon`()], WebsiteIcon(),
-[`YoutubeIcon`()], YoutubeIcon(),
+[`arxiv-icon`()], arxiv-icon(),
+[`cc-by-icon`()], cc-by-icon(),
+[`cc-nc-icon`()], cc-nc-icon(),
+[`cc-nd-icon`()], cc-nd-icon(),
+[`cc-sa-icon`()], cc-sa-icon(),
+[`cc-zero-icon`()], cc-zero-icon(),
+[`cc-icon`()], cc-icon(),
+[`curvenote-icon`()], curvenote-icon(),
+[`discord-icon`()], discord-icon(),
+[`email-icon`()], email-icon(),
+[`github-icon`()], github-icon(),
+[`jupyter-book-icon`()], jupyter-book-icon(),
+[`jupyter-text-icon`()], jupyter-text-icon(),
+[`jupyter-icon`()], jupyter-icon(),
+[`linkedin-icon`()], linkedin-icon(),
+[`mastodon-icon`()], mastodon-icon(),
+[`myst-icon`()], myst-icon(),
+[`open-access-icon`()], open-access-icon(),
+[`orcid-icon`()], orcid-icon(),
+[`osi-icon`()], osi-icon(),
+[`ror-icon`()], ror-icon(),
+[`slack-icon`()], slack-icon(),
+[`twitter-icon`()], twitter-icon(),
+[`website-icon`()], website-icon(),
+[`youtube-icon`()], youtube-icon(),
 // End Icons
 )
 

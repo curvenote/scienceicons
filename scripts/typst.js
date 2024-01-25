@@ -10,9 +10,7 @@ async function getSvgText(style) {
   return Promise.all(
     files.map(async (file) => ({
       svg: await fs.readFile(`./optimized/${style}/${file}`, 'utf8'),
-      name: `${camelcase(file.replace(/\.svg$/, ''), {
-        pascalCase: true,
-      })}`,
+      name: file.replace(/\.svg$/, ''),
     }))
   )
 }
@@ -34,7 +32,7 @@ async function writeReadMe(icons) {
     if (line === '## List of Icons') {
       skip = true
       out.push('## List of Icons\n')
-      out.push(icons.map(({ name }) => `- ${name}Icon`))
+      out.push(icons.map(({ name }) => `- ${name}-icon`))
       out.push('')
       continue
     }
@@ -59,7 +57,7 @@ async function writeDocs(icons) {
     if (line === '// Start Icons') {
       skip = true
       out.push(line)
-      out.push(icons.map(({ name }) => `[\`${name}Icon\`()], ${name}Icon(),`))
+      out.push(icons.map(({ name }) => `[\`${name}-icon\`()], ${name}-icon(),`))
     } else if (skip && line === '// End Icons') {
       skip = false
       out.push(line)
@@ -80,8 +78,8 @@ async function buildIcons(package, style) {
       const svg = icon.svg.replaceAll('\n', '')
       return [
         `// ${icon.name}`,
-        `#let ${icon.name}Svg = \`\`\`${svg}\`\`\`.text`,
-        `#let ${icon.name}Icon(color: black, height: 1.1em, baseline: 13.5%) = {\n  box(height: height, baseline: baseline, image.decode(${icon.name}Svg.replace("currentColor", color.to-hex())))\n}`,
+        `#let ${icon.name}-svg = \`\`\`${svg}\`\`\`.text`,
+        `#let ${icon.name}-icon(color: black, height: 1.1em, baseline: 13.5%) = {\n  box(height: height, baseline: baseline, image.decode(${icon.name}-svg.replace("currentColor", color.to-hex())))\n}`,
       ].join('\n')
     })
     .join('\n\n')
