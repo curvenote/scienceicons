@@ -55,7 +55,7 @@ Now each icon can be imported individually as a Vue component:
 ```vue
 <template>
   <div>
-    <OpenAccessIcon class="h-6 w-6 text-blue-500" />
+    <OpenAccessIcon class="w-6 h-6 text-blue-500" />
     <p>...</p>
   </div>
 </template>
@@ -77,7 +77,7 @@ Icons use an upper camel case naming convention and are always suffixed with the
 
 ## License
 
-This library is based on [heroicons](https://www.npmjs.com/package/heroicons), see [MIT license](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE).
+This library is primarily based on [heroicons](https://www.npmjs.com/package/heroicons), see [MIT license](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE). For other cases, license and attribution information can be found in comments within individual `.svg` files.
 
 ## License
 
