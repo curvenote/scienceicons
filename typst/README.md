@@ -33,6 +33,7 @@ Additionally the raw SVG text for each icon can be found by replacing `Icon` wit
 - cc-icon
 - curvenote-icon
 - discord-icon
+- discourse-icon
 - email-icon
 - github-icon
 - jupyter-book-icon

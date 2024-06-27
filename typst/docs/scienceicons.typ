@@ -49,6 +49,7 @@ Additionally the raw SVG text for each icon can be found by replacing `Icon` wit
 [`cc-icon`()], cc-icon(),
 [`curvenote-icon`()], curvenote-icon(),
 [`discord-icon`()], discord-icon(),
+[`discourse-icon`()], discourse-icon(),
 [`email-icon`()], email-icon(),
 [`github-icon`()], github-icon(),
 [`jupyter-book-icon`()], jupyter-book-icon(),
