@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.8] - 2024-06-27
+
+Fix spacing of Discourse icon.
+
 ## [0.0.7] - 2024-06-25
 
 Add Discourse icon.
