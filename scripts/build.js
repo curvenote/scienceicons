@@ -1,4 +1,5 @@
 const fs = require('fs').promises
+const path = require('path')
 const camelcase = require('camelcase')
 const { promisify } = require('util')
 const rimraf = promisify(require('rimraf'))
@@ -51,6 +52,7 @@ async function getIcons(style) {
   let files = await fs.readdir(`./optimized/${style}`)
   return Promise.all(
     files.map(async (file) => ({
+      file,
       svg: await fs.readFile(`./optimized/${style}/${file}`, 'utf8'),
       componentName: `${camelcase(file.replace(/\.svg$/, ''), {
         pascalCase: true,
@@ -60,7 +62,7 @@ async function getIcons(style) {
 }
 
 function exportAll(icons, format, includeExtension = true) {
-  return icons
+  const iconExports = icons
     .map(({ componentName }) => {
       let extension = includeExtension ? '.js' : ''
       if (format === 'esm') {
@@ -69,6 +71,16 @@ function exportAll(icons, format, includeExtension = true) {
       return `module.exports.${componentName} = require("./${componentName}${extension}")`
     })
     .join('\n')
+
+  const names = icons.map(({ file }) => path.basename(file, '.svg'))
+  let namesExport
+  if (format === 'esm') {
+    namesExport = `export const names = ${JSON.stringify(names)}`
+  } else {
+    namesExport = `module.exports.names = ${JSON.stringify(names)}`
+  }
+
+  return iconExports + `\n` + namesExport
 }
 
 async function ensureWrite(file, text) {
