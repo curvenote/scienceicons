@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.11] - 2024-06-28
+
+Extended `names` to export plain and component names
+
 ## [0.0.10] - 2024-06-28
 
 Added `names` exports

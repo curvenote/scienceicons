@@ -72,7 +72,10 @@ function exportAll(icons, format, includeExtension = true) {
     })
     .join('\n')
 
-  const names = icons.map(({ file }) => path.basename(file, '.svg'))
+  const names = icons.map(({ file, componentName }) => ({
+    name: path.basename(file, '.svg'),
+    componentName,
+  }))
   let namesExport
   if (format === 'esm') {
     namesExport = `export const names = ${JSON.stringify(names)}`
