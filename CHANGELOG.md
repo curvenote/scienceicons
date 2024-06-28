@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.9] - 2024-06-28
+
+Added `names` exports
+
 ## [0.0.8] - 2024-06-27
 
 Fix spacing of Discourse icon.
