@@ -1,6 +1,6 @@
 {
   "name": "@scienceicons/myst",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Open Science Icons in MyST Markdown by Curvenote",
   "type": "module",
   "exports": {
@@ -14,7 +14,8 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "scripts": {
     "prepare": "npm run build",
@@ -52,5 +53,8 @@
     "@scienceicons/react": "*",
     "react": "^16.8 || ^17.0 || ^18.0",
     "react-dom": "^16.8 || ^17.0 || ^18.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
