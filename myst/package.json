@@ -1,0 +1,60 @@
+{
+  "name": "@scienceicons/myst",
+  "version": "1.0.1",
+  "description": "Open Science Icons in MyST Markdown by Curvenote",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./dist/scienceicons.mjs",
+      "types": "./dist/scienceicons.d.ts"
+    },
+    "./react": {
+      "default": "./dist/react/index.js",
+      "types": "./dist/react/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "prepare": "npm run build",
+    "build:plugin": "tsup",
+    "build:react": "tsc --project tsconfig.react.json",
+    "build": "npm run build:plugin"
+  },
+  "homepage": "https://github.com/curvenote/scienceicons#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/curvenote/scienceicons.git"
+  },
+  "keywords": [
+    "icons",
+    "open science",
+    "myst markdown",
+    "markdown"
+  ],
+  "author": "Steve Purves <steve@curvenote.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/curvenote/scienceicons/issues"
+  },
+  "devDependencies": {
+    "@myst-theme/providers": "^0.9.8",
+    "@scienceicons/react": "*",
+    "lucide-react": "^0.400.0",
+    "myst-common": "^1.4.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsup": "^8.1.0",
+    "typescript": "^5.5.3"
+  },
+  "peerDependencies": {
+    "@scienceicons/react": "*",
+    "react": "^16.8 || ^17.0 || ^18.0",
+    "react-dom": "^16.8 || ^17.0 || ^18.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

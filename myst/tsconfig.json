@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "ESNext", // Use ESNext or ES6
+    "target": "ESNext", // Compile to a modern target
+    "moduleResolution": "node", // Use Node's resolution algorithm
+    "esModuleInterop": true, // Enables compatibility with CommonJS
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
+    "resolveJsonModule": true
+  },
+  "include": ["src/*.ts"], // Adjust this to your source files' location
+  "exclude": ["node_modules"] // Standard exclude
+}

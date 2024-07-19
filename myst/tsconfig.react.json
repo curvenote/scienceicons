@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "React Library",
+  "compilerOptions": {
+    "moduleResolution": "node16", // Use Node's resolution algorithm
+    "lib": ["ES2019", "DOM", "DOM.Iterable"],
+    "target": "ES2019",
+    "jsx": "react-jsx",
+    "composite": false,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": false,
+    "isolatedModules": true,
+    "module": "node16",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "outDir": "dist/react"
+  },
+  "include": ["src/react/**/*.ts", "src/react/**/*.tsx"],
+  "exclude": ["node_modules"]
+}
