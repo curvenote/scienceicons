@@ -17,6 +17,7 @@
     "dist"
   ],
   "scripts": {
+    "prepare": "npm run build",
     "build:plugin": "tsup",
     "build:react": "tsc --project tsconfig.react.json",
     "build": "npm run build:plugin"
