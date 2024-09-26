@@ -21,7 +21,7 @@
     "prepare": "npm run build",
     "build:plugin": "tsup",
     "build:react": "tsc --project tsconfig.react.json",
-    "build": "npm run build:plugin"
+    "build": "npm run build:plugin && npm run build:react"
   },
   "homepage": "https://github.com/curvenote/scienceicons#readme",
   "repository": {
@@ -40,6 +40,7 @@
     "url": "https://github.com/curvenote/scienceicons/issues"
   },
   "devDependencies": {
+    "@curvenote/common": "^0.2.6",
     "@myst-theme/providers": "^0.9.8",
     "@scienceicons/react": "*",
     "lucide-react": "^0.400.0",
