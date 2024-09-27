@@ -7,7 +7,7 @@ import { CircleAlert } from 'lucide-react';
 function UnknownIcon({ value }: { value: React.ReactNode }) {
   return (
     <span className="text-yellow-600" title={`${value} is unknown`}>
-      <CircleAlert width="1rem" height="1rem" className="inline" />
+      <CircleAlert width="1.2em" height="1.2em" className="inline" />
     </span>
   );
 }
@@ -23,7 +23,7 @@ export const ScienceIconRenderer: NodeRenderer = ({ node }: { node: GenericNode 
     >;
     return (
       <span className="inline-flex align-text-bottom" title={node.value}>
-        <Component width="1rem" height="1rem" />
+        <Component width="1.2em" height="1.2em" />
       </span>
     );
   }

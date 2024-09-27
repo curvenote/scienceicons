@@ -1,6 +1,6 @@
 {
   "name": "@scienceicons/myst",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Open Science Icons in MyST Markdown by Curvenote",
   "type": "module",
   "exports": {
