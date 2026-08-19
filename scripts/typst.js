@@ -78,7 +78,7 @@ async function buildIcons(package, style) {
       const svg = icon.svg.replaceAll('\n', '');
       return [
         `// ${icon.name}`,
-        `#let ${icon.name}-svg = \`\`\`svg ${svg}\`\`\`.text`,
+        `#let ${icon.name}-svg = \`\`\` svg ${svg}\`\`\`.text`,
         `#let ${icon.name}-icon(color: black, height: 1.1em, baseline: 13.5%) = {\n  box(height: height, baseline: baseline, image(bytes(${icon.name}-svg.replace("currentColor", color.to-hex()))))\n}`,
       ].join('\n');
     })
